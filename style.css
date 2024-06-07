@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+	margin: 0;
+	background: lightsteelblue;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+header {
+  background: #79abda;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: rgb(32, 12, 70);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.dotInk-logo{
+  height: 150pxpx;
+  width: 150px
+}
+
+.calendar {
+  margin: 50px;
+}
+
+/* .studying {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+} */
+
+/* .pomodoro {
+  margin: 10px;
+  display: flex;
+  flex-direction: row
+} */
+
+.quote {
+  font-size: 33px; 
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  background-color: #a7cdf0;
+  color: rgb(78, 84, 85)
+  
+}
+
+
+.goals,
+.groceries, .freewrite {
+  margin: 20px;
+  background-color: rgb(196, 216, 245);
+  border-radius: 3px;
+  padding: 25px;
+  width: 50%
+}
+
+.goals {
+  text-align: center; 
+}
+.groceries {
+  text-align: center; 
+  width: 44%
+}
+
+.reflect {
+  text-align: center;
+  background-color:rgb(196, 216, 245);
+  margin: 20px;
+}
+
+.goals-btn, .groceries-btn, .todo-btn {
+  background-color: rgb(151, 151, 224); 
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+h1, p {
+  padding-bottom: 5px;
+}
+
+button {
+  background-color: aliceblue;
+            color: black;
+            text-align: center;
+            font-size: 10px;
+            padding: 5px;
+}
+
+.journaling {
+  display: flex;
+  flex-direction:row; 
+}
+
+input {
+  height
+}
+
+/* tiny reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+/* body */
+body{
+  background: lightsteelblue;;
+  font-family: sans-serif;
+  /*border-top: 5px solid #aa8e8d;*/
+}
+/* title */
+h1{
+  color:rgb(53, 53, 53);
+  text-align: center;
+  font-size: 32px;
+  font-w900;
+}
+/* tasks */
+.tasks{
+  width: 300px;
+  height: 405px;
+  position: absolute;
+  top: 20%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+input[type=checkbox] {
+  display: none;
+}
+label{
+  background: #98c0f5;
+  height: 69px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2C3E50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+label h2 span{
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #fff;
+}
+label:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+  transition: border 0.7s ease
+}
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+  background: lightsteelblue;;
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5]{
+  border-bottom: 1px solid #34495E;
+  color: #d37b79;
+}
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span{
+  color: #f6bd66;
+}
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before{
+  background: url("https://i.imgur.com/eoPQ05r.png") no-repeat center center;
+}
+
+/* _---------------------------_ */
+
+.parallax{
+  background: url('https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 227, 227);
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+
+/* ------------------------ */
+
+
+input {
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.dashstuff {
+  display: flex;
+  flex-direction: row; 
+}
+
+.taskStuff, .goalsStuff, .groceryStuff {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+}
+
+.todo {
+  text-align: center;
+  background-color: rgb(196, 216, 245);
+  height: 600px;
+  margin-top: 50px;
+  width: 550px;
+}
+
+.delete-btn {
+  background-color: rgb(255, 208, 208); 
+  color: rgb(212, 17, 17);
+  font-size: 12px;
+  border-radius: 5px;
+  padding-left:10px;
+  padding-right: 10px;
+  height: 29px;
+ margin-top: 10px;  
+ 
+}
+.delete-btns {
+  background-color: rgb(255, 208, 208); 
+  color: rgb(212, 17, 17);
+  font-size: 12px;
+  border-radius: 5px;
+  padding-left:10px;
+  padding-right: 10px;
+  height: 29px;
+ margin-bottom: 5px;  
+ 
+}
+
+.duh {
+  font-family: 'Dancing Script', cursive;
+}

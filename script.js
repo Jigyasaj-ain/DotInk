@@ -81,6 +81,11 @@ function addTask() {
     <button class= "delete-btn"> Delete </button>
   </div> `)
 }
+ // Attach the event listener to the parent container of the buttons
+$(document).on('click', '.delete-btn', function(event) {
+  // Remove the parent element of the clicked button
+  $(event.target).parent().remove();
+});
 var deleteBtn = $('.delete-btn');  // Use proper quotes for jQuery selector
 
 goals.on('click', deleteFunction);

@@ -81,13 +81,14 @@ function addTask() {
     <button class= "delete-btn"> Delete </button>
   </div> `)
 }
-// var deleteBtn = $(`.delete-btn`)
-goals.on('click', deleteFunction)
-groceries.on('click', deleteFunction)
-todoList.on('click', deleteFunction)
+var deleteBtn = $('.delete-btn');  // Use proper quotes for jQuery selector
 
-function deleteFunction () {
-  if (event.target.className==="delete-btn") {
-    event.target.parentNode.remove ();
+goals.on('click', deleteFunction);
+groceries.on('click', deleteFunction);
+todoList.on('click', deleteFunction);
+
+function deleteFunction(event) {  // Add 'event' parameter
+  if (event.target.className === "delete-btn") {
+    event.target.parentNode.remove();
   }
 }
